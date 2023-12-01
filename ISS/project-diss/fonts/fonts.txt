@@ -1,0 +1,8 @@
+for album descriptions: Alkatra ( google font )
+for headers and navigation bars: Bebas Neue ( google font )
+artist/album names: Monoton ( google font )
+Whenever displaying text on transparent stuff on images: Poiret One ( google font )
+good heading fonts: Cabin Sketch ( google font )
+for text in boxes like beside albums etc : Forum ( google font ) 
+footer: Daddy time ( nerd font)
+for quotes, Victor Mono Regular Nerd Font

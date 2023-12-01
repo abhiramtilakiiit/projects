@@ -1,0 +1,34 @@
+@import url("./fonts.css");
+
+.navbar {
+  overflow: hidden;
+  background-image: url("../../images/banner_1.jpeg");
+  position: sticky;
+  top: 0px;
+  width: 100vw;
+  font-family: "Navbar Font";
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  z-index: 99;
+}
+
+.navbar a {
+  align-items: center;
+  justify-content: space-between;
+  display: inline-flex;
+  color: #eeeeee;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 5%;
+  font-size: 20px;
+  border-radius: 5px;
+  margin: 2px 4px 4px 4px;
+}
+
+.navbar-selected {
+  background-color: rgba(255, 255, 140, 0.3);
+}
+
+.navbar a:hover {
+  background-color: rgba(150, 150, 150, 0.3);
+}

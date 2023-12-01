@@ -1,0 +1,66 @@
+.album-outer {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10px;
+  padding: 20px;
+  background-image: url("../../images/banner_4.jpg");
+  border-radius: 30px;
+  color: white;
+}
+
+.album-cover {
+  display: grid;
+  grid-template-columns: 350px calc(100% - 350px);
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: "Description Font";
+}
+
+.album-cover img {
+  align-self: start;
+  border-radius: 20px;
+  padding: 20px;
+  width: 300px;
+}
+
+.album-cover p {
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  margin: 20px;
+  height: fit-content;
+  position: absolute;
+
+  /* Vertically center div */
+  position: relative;
+  top: 45%;
+  transform: translateY(-50%);
+}
+
+.album-songs {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  font-family: "Song Font";
+}
+
+.album-songs li {
+  background: rgba(0, 0, 0, 0.4);
+  margin: 10px;
+  border-radius: 10px;
+  text-align: left;
+  padding: 5px;
+}
+
+.song {
+  display: grid;
+  grid-template-columns: 85% 10% 5%;
+}
+
+.song p {
+  margin: 0;
+}

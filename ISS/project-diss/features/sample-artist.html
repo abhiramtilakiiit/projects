@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .box1{            
+            position: relative;
+            min-height: 300px;
+            border-color: white;
+            z-index: 0;
+            border-width: 3px;
+            border-style: solid;
+            border-radius: 15px;
+        }
+        .box1:hover{
+            z-index: 2;
+
+        }
+
+        .box1 img{
+            width: 100%; 
+            max-height: 450px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 5px 5px 5px #3a3a3a;
+        }
+
+        .box1 img:hover{
+            z-index: 2;
+            box-shadow: 10px 10px 10px #3a3a3a,
+                        -5px -5px 5px #3a3a3a;
+        }
+
+        .name-on-image{
+            font-weight:bolder;
+            font-size: 90px;
+            padding: 20px;
+            color: aliceblue;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 30px;
+            top: 17%;
+            left: 33%;
+            transform: translate(-50%, -50%) ;
+            text-align:start ;
+        }
+        .description-on-image{
+            font-size: 16px;
+            width: 650px;
+            padding: 20px;
+            color: aliceblue;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 30px;
+            top: 50%;
+            left: 32%;
+            word-wrap: break-word;
+            transform: translate(-50%, -50%) ;
+            text-align:start ;
+        }
+
+
+        .box2{
+            position: absolute; 
+            margin-top: -200px;
+            border-style: solid;
+            border-color: white;
+            border-width: 5px;
+            z-index: 1;
+            margin-left: 63%;
+            background-color: blue;
+            border-radius: 100%;
+            width: 350px;
+            height: 350px;
+            box-shadow: none;
+        }
+
+        .box2 img{
+            max-width: 100%; 
+            border-radius: 100%;
+            height: auto;
+            object-fit: cover;
+            box-shadow: -5px -5px 5px #3a3a3a;
+        }       
+
+        .box2 img:hover{
+            box-shadow: 3px 3px 5px #3a3a3a,
+                        -3px 3px 5px #3a3a3a,
+                        3px -3px 5px #3a3a3a,
+                        -3px -3px 5px #3a3a3a;
+        }
+
+        .grid-container{
+            overflow: hidden;
+            position: relative;
+            margin-left: 10%;
+            margin-right: 10%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            z-index: 0;
+            background: radial-gradient( circle,  rgba(255, 255, 255, 0.2), rgba(216,216,216,0.6));
+            border-radius: 10px;
+            height: 375px;
+        }
+
+        .grid-container:hover {
+            z-index: 3;
+        }
+
+        .grid-container img {
+            z-index: 4;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .grid-container img:hover{
+            z-index: 0;
+            filter: brightness(0.3)
+        }
+
+        .song-list {
+            height: 325px;
+            border-radius: 5px;
+            margin: 5%;
+            grid-template-rows: repeat( 5, 1fr);
+            background: radial-gradient( circle,  rgba(255, 255, 255, 0.2), rgba(216,216,216,0.6));
+            overflow: auto;
+            scrollbar-width: thin;
+            scroll-behavior: smooth;
+            scrollbar-color: rgba(255,255,255,0.5) rgba(216,216,216,0.1);
+        }
+
+        .text-on-image{
+            font-size: 30px;
+            color: aliceblue;
+            position: absolute;
+            top: 50%;
+            left: 20%;
+            transform: translate(-50%, -50%) ;
+            text-align: center;
+        }
+
+        ol {
+          padding-left: 20px;
+          padding-right: 20px;
+          list-style: none; /* remove the default bullet points */
+        }
+
+        ol li {
+          overflow: auto;
+          overflow-x: hidden;
+          background-color: #f0f0f0; /* set the background color for each list item */
+          padding: 10px; /* add padding to make it look nicer */
+          padding-left: 20px;
+          margin-bottom: 5px; /* add some spacing between the list items */
+          border-radius: 20px;
+        }
+
+        .top-songs-grid{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            height: 250px;
+            padding-left: 50px;
+            align-content: center;
+            margin-left: 5%;
+            border-radius: 50px;
+            display: grid;
+            grid-column-start: span;
+            background: radial-gradient( circle,  rgba(255, 255, 255, 0.2), rgba(216,216,216,0.6));
+
+            white-space: nowrap;
+            overflow-x: auto;
+            scrollbar-width: thin;
+            scroll-behavior: smooth;
+            scrollbar-color: rgba(196, 195, 195, 0.5) rgba(216,216,216,0.1);
+        }
+
+        .top-songs-grid img{
+            border-radius: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+  <div class="box1">
+    <img src="../images/artist/BIG_tyler.jpg" alt="profile banner">
+  </div>
+  <div class="box2">
+    <img src="../images/artist/tyler_the_creator.jpg" alt="Profile Picture" >
+  </div>
+  <div class="name-on-image">
+    Tyler the Creator
+  </div>
+  <div class="description-on-image">
+    asdfffffffffffffffffffffffffffffffffffssssssssssssss
+    ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+    asdffffffffffffffffffffffffffffffffffffffffffffffffffdddddddddddd
+    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+    asfdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+    tihs is smaple description
+    i got a lo of shi to say<br><br>
+    you need to set this manulaly
+    asdfasdfadadsf<br>
+    adsfaf<br>
+    asdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+  </div>
+  <br>
+    <h1>Albums</h1>
+  <div class="grid-container">
+        <img src="../images/album_covers/Tyler_the_creator/Cherry_Bomb_Tyler_the_Creator.png" alt="album1">
+        <div class="song-list">
+            <ol>
+                <li> Song 1</li>
+                <li> Song 2</li>
+                <li> Song 3</li>
+                <li> Song 4</li>
+                <li> Song 5</li>
+                <li> Song 6</li>
+                <li> Song 7</li>
+                <li> Song 8</li>
+                <li> Song 9</li>
+                <li> Song 10</li>
+            </ol>    
+        </div>
+        <div class="text-on-image">
+            Name: Cherry Bomb<br><br>
+            10 songs
+        </div>
+  </div>
+  <br><br>
+  <div class="grid-container">
+        <img src="../images/album_covers/Tyler_the_creator/igor.jpg" alt="album1">
+        <div class="song-list">
+            <ol>
+                <li> Song 1</li>
+                <li> Song 2</li>
+                <li> Song 3</li>
+                <li> Song 4</li>
+                <li> Song 5</li>
+                <li> Song 6</li>
+                <li> Song 7</li>
+                <li> Song 8</li>
+                <li> Song 9</li>
+                <li> Song 10</li>
+            </ol>    
+        </div>
+        <div class="text-on-image">
+            Name: Igor <br><br>
+            10 songs
+        </div>
+  </div>
+  <br>
+  <h1>Top Songs</h1>
+  <br>
+  <div class="top-songs-grid">
+
+    <figure>
+        <img src="../images/Songs/Sneed's_feed_and_sneed.jpg">
+        <figcaption style="text-align: center">Song name</figcaption>
+    </figure>
+    <figure>
+        <img src="../images/Songs/Sneed's_feed_and_sneed.jpg">
+        <figcaption style="text-align: center">Song name</figcaption>
+    </figure>
+    <figure>
+        <img src="../images/Songs/Sneed's_feed_and_sneed.jpg">
+        <figcaption style="text-align: center">Song name</figcaption>
+    </figure>
+    <figure>
+        <img src="../images/Songs/Sneed's_feed_and_sneed.jpg">
+        <figcaption style="text-align: center">Song name</figcaption>
+    </figure>
+  </div>
+  <div>
+  </div>
+
+
+</body>
+
+</html>

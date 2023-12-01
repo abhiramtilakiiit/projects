@@ -1,0 +1,248 @@
+/* Center the container */
+.artists-content {
+  padding: 30px;
+  background: black;
+  box-shadow: 0px 5px 5px rgba(50, 50, 50, 0.4),
+    0px -5px 5px rgba(50, 50, 50, 0.3), 5px 0px 5px rgba(50, 50, 50, 0.3),
+    -5px 0px 5px rgba(50, 50, 50, 0.3);
+  background-image: url(../../images/banner_4.jpg);
+  border-radius: 30px;
+  margin: 30px;
+}
+
+.artist-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  box-shadow: 0px 10px 5px rgba(50, 50, 50, 0.4),
+    0px -10px 5px rgba(50, 50, 50, 0.3), 10px 0px 5px rgba(50, 50, 50, 0.3),
+    -10px 0px 5px rgba(50, 50, 50, 0.3);
+  border-radius: 30px;
+  height: 100vh;
+}
+
+.container1 {
+  background-image: url(../../images/artist/BIG_tyler.jpg);
+}
+
+.container2 {
+  background-image: url(../../images/artist/BIG_rick_astley.jpg);
+}
+
+.container3 {
+  background-image: url(../../images/artist/BIG_dizzee.jpg);
+  background-size: cover;
+}
+
+.container4 {
+  background-image: url(../../images/artist/BIG_beethoven.jpg);
+}
+
+.container5 {
+  background-image: url(../../images/artist/BIG_pepe.jpg);
+}
+
+.container6 {
+  background-image: url(../../images/artist/BIG_kanye.jpg);
+}
+
+.container7 {
+  background-image: url(../../images/artist/BIG_burger.jpg);
+}
+
+.container8 {
+  background-image: url(../../images/artist/big_wiley.png);
+}
+
+.container9 {
+  background-image: url(../../images/artist/Big_pete_and_bas.jpg);
+}
+
+/* Style the central image */
+.center-image1 {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  top: 7%;
+  left: 35%;
+  box-shadow: 0px 5px 5px rgba(50, 50, 50, 0.4),
+    0px -5px 5px rgba(50, 50, 50, 0.3), 5px 0px 5px rgba(50, 50, 50, 0.3),
+    -5px 0px 5px rgba(50, 50, 50, 0.3);
+  background-size: cover;
+}
+
+.center-image1 img {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+.center-image1:hover {
+  scale: 1.1;
+  box-shadow: 0px 10px 5px rgba(50, 50, 50, 0.4),
+    0px -10px 5px rgba(50, 50, 50, 0.3), 10px 0px 5px rgba(50, 50, 50, 0.3),
+    -10px 0px 5px rgba(50, 50, 50, 0.3);
+  border: solid rgba(255, 255, 255, 0.258);
+}
+
+/* Style the outer images */
+.outer-image1 {
+  width: 150px;
+  height: 150px;
+  border-radius: 5%;
+  position: absolute;
+  box-shadow: -10px -10px 5px #00000049;
+  background: #0000004d;
+  display: flex;
+}
+
+.outer-image1:hover {
+  scale: 1.2;
+}
+
+/* Position the outer images */
+.outer-image1:nth-child(1) {
+  top: 15%;
+  left: 10%;
+  margin-top: 200px;
+  box-shadow: 0px 5px 5px rgba(50, 50, 50, 0.4),
+    0px -5px 5px rgba(50, 50, 50, 0.3), 5px 0px 5px rgba(50, 50, 50, 0.3),
+    -5px 0px 5px rgba(50, 50, 50, 0.3);
+  transform: translate(-50%, -100%);
+}
+
+.outer-image1:nth-child(2) {
+  top: 30%;
+  left: 13%;
+  margin-top: 200px;
+  transform: translate(-50%, -100%);
+}
+
+.outer-image1:nth-child(3) {
+  top: 45%;
+  left: 17%;
+  margin-top: 200px;
+  transform: translate(-50%, -100%);
+}
+
+.outer-image1:nth-child(4) {
+  top: 60%;
+  left: 24%;
+  margin-top: 200px;
+  transform: translate(-50%, -100%);
+}
+
+.outer-image1:nth-child(5) {
+  top: 67%;
+  left: 35%;
+  margin-top: 200px;
+  transform: translate(-50%, -100%);
+}
+
+.outer-image1:nth-child(6) {
+  top: 72%;
+  left: 46%;
+  margin-top: 200px;
+  transform: translate(-50%, -100%);
+}
+
+.outer-image1:nth-child(7) {
+  top: 74%;
+  left: 58%;
+  margin-top: 200px;
+  transform: translate(-50%, -100%);
+}
+
+.outer-image1:nth-child(8) {
+  top: 75%;
+  left: 69%;
+  margin-top: 200px;
+  transform: translate(-50%, -100%);
+}
+
+.outer-image1:nth-child(9) {
+  top: 75.5%;
+  left: 80%;
+  margin-top: 200px;
+  transform: translate(-50%, -100%);
+}
+
+.outer-image1:nth-child(10) {
+  top: 0;
+  left: 150%;
+  margin-top: 200px;
+  transform: translate(-50%, -100%);
+}
+
+figure {
+  position: relative;
+  /* Make the figure container relative */
+  display: inline-block;
+  /* Set the container to display as an inline-block element */
+}
+
+figure img {
+  display: block;
+  /* Remove any default spacing between the image and the caption */
+  width: 100%;
+  /* Set the image width to fill the container */
+  height: auto;
+  /* Set the image height to automatically adjust based on the width */
+  transition: filter 0.3s ease-in-out;
+}
+
+figure:hover img {
+  filter: brightness(50%);
+  /* Reduce the brightness of the image when the user hovers over the figure */
+}
+
+figcaption {
+  font-family: "Image Font";
+  position: absolute;
+  /* Position the caption absolutely inside the figure container */
+  top: 50%;
+  /* Position the top of the caption halfway down the figure container */
+  left: 50%;
+  /* Position the left side of the caption halfway across the figure container */
+  transform: translate(-50%, -50%);
+  /* Move the caption up and left by half its width and height */
+  color: rgba(255, 255, 255, 0);
+  text-align: center;
+}
+
+figure:hover figcaption {
+  color: white;
+}
+
+.Quote {
+  font-family: "Temp Quote Font";
+  text-align: center;
+  font-size: 60px;
+  color: #442110f5;
+}
+
+.Heading {
+  margin: 0;
+  padding: 0;
+  font-family: "Heading Font";
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+}
+
+@font-face {
+  font-family: "Image Font";
+  src: url("../../fonts/PoiretOne-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Heading font";
+  src: url("../../fonts/Monoton-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Temp Quote Font";
+  src: url("../../fonts/CabinSketch-Regular.ttf");
+}

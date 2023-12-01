@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Semi-Circle of Images</title>
+    <style>
+    /* Center the container */
+    .Content{
+        padding: 30px;
+        background: black;
+      box-shadow: 0px 5px 5px rgba(50, 50, 50, 0.4),
+                0px -5px 5px rgba(50, 50, 50, 0.3),
+                5px 0px 5px rgba(50, 50, 50, 0.3),
+               -5px 0px 5px rgba(50, 50, 50, 0.3);
+        background-image: url(../images/head4.jpg);
+        border-radius: 30px;
+        margin: 30px
+    }
+
+
+    .container1 {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(../images/artist/BIG_tyler.jpg);
+      background-size: cover;
+      box-shadow: 0px 10px 5px rgba(50, 50, 50, 0.4),
+                0px -10px 5px rgba(50, 50, 50, 0.3),
+                10px 0px 5px rgba(50, 50, 50, 0.3),
+               -10px 0px 5px rgba(50, 50, 50, 0.3);
+      border-radius: 30px;
+      height: 100vh;
+    }
+
+    .container2 {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(../images/artist/BIG_rick_astley.jpg);
+      background-size: cover;
+      box-shadow: 0px 10px 5px rgba(50, 50, 50, 0.4),
+                0px -10px 5px rgba(50, 50, 50, 0.3),
+                10px 0px 5px rgba(50, 50, 50, 0.3),
+               -10px 0px 5px rgba(50, 50, 50, 0.3);
+      border-radius: 30px;
+      height: 100vh;
+    }
+
+    .container3 {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(../images/artist/BIG_dizzee.jpg);
+      background-size: cover;
+      box-shadow: 0px 10px 5px rgba(50, 50, 50, 0.4),
+                0px -10px 5px rgba(50, 50, 50, 0.3),
+                10px 0px 5px rgba(50, 50, 50, 0.3),
+               -10px 0px 5px rgba(50, 50, 50, 0.3);
+      border-radius: 30px;
+      height: 100vh;
+    }
+
+    .container4 {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(../images/artist/BIG_beethoven.jpg);
+      background-size: cover;
+      box-shadow: 0px 10px 5px rgba(50, 50, 50, 0.4),
+                0px -10px 5px rgba(50, 50, 50, 0.3),
+                10px 0px 5px rgba(50, 50, 50, 0.3),
+               -10px 0px 5px rgba(50, 50, 50, 0.3);
+      border-radius: 30px;
+      height: 100vh;
+    }
+
+    .container5 {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(../images/artist/BIG_pepe.jpg);
+      background-size: cover;
+      box-shadow: 0px 10px 5px rgba(50, 50, 50, 0.4),
+                0px -10px 5px rgba(50, 50, 50, 0.3),
+                10px 0px 5px rgba(50, 50, 50, 0.3),
+               -10px 0px 5px rgba(50, 50, 50, 0.3);
+      border-radius: 30px;
+      height: 100vh;
+    }
+
+    .container6 {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(../images/artist/BIG_kanye.jpg);
+      background-size: cover;
+      box-shadow: 0px 10px 5px rgba(50, 50, 50, 0.4),
+                0px -10px 5px rgba(50, 50, 50, 0.3),
+                10px 0px 5px rgba(50, 50, 50, 0.3),
+               -10px 0px 5px rgba(50, 50, 50, 0.3);
+      border-radius: 30px;
+      height: 100vh;
+    }
+    .container7 {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(../images/artist/BIG_burger.jpg);
+      background-size: cover;
+      box-shadow: 0px 10px 5px rgba(50, 50, 50, 0.4),
+                0px -10px 5px rgba(50, 50, 50, 0.3),
+                10px 0px 5px rgba(50, 50, 50, 0.3),
+               -10px 0px 5px rgba(50, 50, 50, 0.3);
+      border-radius: 30px;
+      height: 100vh;
+    }
+
+    .container8 {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(../images/artist/big_wiley.png);
+      background-size: cover;
+      box-shadow: 0px 10px 5px rgba(50, 50, 50, 0.4),
+                0px -10px 5px rgba(50, 50, 50, 0.3),
+                10px 0px 5px rgba(50, 50, 50, 0.3),
+               -10px 0px 5px rgba(50, 50, 50, 0.3);
+      border-radius: 30px;
+      height: 100vh;
+    }
+
+    .container9 {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(../images/artist/Big_pete_and_bas.jpg);
+      background-size: cover;
+      box-shadow: 0px 10px 5px rgba(50, 50, 50, 0.4),
+                0px -10px 5px rgba(50, 50, 50, 0.3),
+                10px 0px 5px rgba(50, 50, 50, 0.3),
+               -10px 0px 5px rgba(50, 50, 50, 0.3);
+      border-radius: 30px;
+      height: 100vh;
+    }
+    /* Style the central image */
+    .center-image1 {
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      top: 7%;
+      left: 35%;
+      box-shadow: 0px 5px 5px rgba(50, 50, 50, 0.4),
+                0px -5px 5px rgba(50, 50, 50, 0.3),
+                5px 0px 5px rgba(50, 50, 50, 0.3),
+               -5px 0px 5px rgba(50, 50, 50, 0.3);
+      background-size: cover;
+    }
+
+    .center-image1 img{
+      position: relative;
+      width: 400px;
+      height: 400px;
+    }
+
+    .center-image1:hover{
+      scale: 1.1;
+      box-shadow: 0px 10px 5px rgba(50, 50, 50, 0.4),
+                0px -10px 5px rgba(50, 50, 50, 0.3),
+                10px 0px 5px rgba(50, 50, 50, 0.3),
+               -10px 0px 5px rgba(50, 50, 50, 0.3);
+      border: solid rgba(255, 255, 255, 0.258);
+    }
+
+    /* Style the outer images */
+    .outer-image1 {
+      width: 150px;
+      height: 150px;
+      border-radius: 5%;
+      position: absolute;
+      box-shadow: -10px -10px 5px #00000049;
+      background: #0000004d;
+      display: flex;
+    }
+
+    .outer-image1:hover{
+      scale: 1.2;
+    }
+
+    /* Position the outer images */
+    .outer-image1:nth-child(1) {
+      top: 15%;
+      left: 10%;
+      margin-top: 200px;
+      box-shadow: 0px 5px 5px rgba(50, 50, 50, 0.4),
+                0px -5px 5px rgba(50, 50, 50, 0.3),
+                5px 0px 5px rgba(50, 50, 50, 0.3),
+               -5px 0px 5px rgba(50, 50, 50, 0.3);
+      transform: translate(-50%, -100%);
+    }
+
+    .outer-image1:nth-child(2) {
+      top: 30%;
+      left: 13%;
+      margin-top: 200px;
+      transform: translate(-50%, -100%);
+    }
+
+    .outer-image1:nth-child(3) {
+      top: 45%;
+      left: 17%;
+      margin-top: 200px;
+      transform: translate(-50%, -100%);
+    }
+
+    .outer-image1:nth-child(4) {
+      top: 60%;
+      left: 24%;
+      margin-top: 200px;
+      transform: translate(-50%, -100%);
+    }
+
+    .outer-image1:nth-child(5) {
+      top: 67%;
+      left: 35%;
+      margin-top: 200px;
+      transform: translate(-50%, -100%);
+    }
+
+    .outer-image1:nth-child(6) {
+      top: 72%;
+      left: 46%;
+      margin-top: 200px;
+      transform: translate(-50%, -100%);
+    }
+
+    .outer-image1:nth-child(7) {
+      top: 74%;
+      left: 58%;
+      margin-top: 200px;
+      transform: translate(-50%, -100%);
+    }
+
+    .outer-image1:nth-child(8) {
+      top: 75%;
+      left: 69%;
+      margin-top: 200px;
+      transform: translate(-50%, -100%);
+    }
+
+    .outer-image1:nth-child(9) {
+      top: 75.5%;
+      left: 80%;
+      margin-top: 200px;
+      transform: translate(-50%, -100%);
+    }
+
+    .outer-image1:nth-child(10) {
+      top: 0;
+      left: 150%;
+      margin-top: 200px;
+      transform: translate(-50%, -100%);
+    }
+
+    figure {
+      position: relative; /* Make the figure container relative */
+      display: inline-block; /* Set the container to display as an inline-block element */
+    }
+
+    figure img{
+      display: block; /* Remove any default spacing between the image and the caption */
+      width: 100%; /* Set the image width to fill the container */
+      height: auto; /* Set the image height to automatically adjust based on the width */
+      transition: filter 0.3s ease-in-out; 
+    }
+
+    figure:hover img {
+      filter: brightness(50%); /* Reduce the brightness of the image when the user hovers over the figure */
+    }
+
+    figcaption {
+      font-family: "Image Font";
+      position: absolute; /* Position the caption absolutely inside the figure container */
+      top: 50%; /* Position the top of the caption halfway down the figure container */
+      left: 50%; /* Position the left side of the caption halfway across the figure container */
+      transform: translate(-50%, -50%); /* Move the caption up and left by half its width and height */
+      color:rgba(255, 255, 255, 0);
+      text-align: center;
+    }
+
+    figure:hover figcaption{
+        color: white;
+    }
+
+    .Quote{
+        font-family: "Quote Font";
+        text-align: center;
+        font-size: 60px;
+        color: #442110f5;
+    }
+
+    .Heading {
+      margin:0;
+      padding:0;
+      font-family: "Heading Font";
+      font-size: 60px;
+      color: red;
+    }
+    @font-face {
+      font-family: "Image Font";
+      src: url("../fonts/PoiretOne-Regular.ttf");
+    }
+
+
+    @font-face {
+      font-family: "Heading font";
+      src: url("../fonts/Monoton-Regular.ttf");
+    }
+
+    @font-face {
+      font-family: "Quote Font";
+      src: url("../fonts/CabinSketch-Regular.ttf");
+    }
+
+
+   </style>
+  </head>
+  <body>
+    <h1 class="Quote">'' Talented Artists from all Over the World" </h1>
+    <div class="Content">
+        <h1 class="Heading">Rick Astley</h1>
+        <div class="container2">
+          <figure class="outer-image1">
+            <img src="../images/album_covers/rick_astley/whenever_you_need_somebody.jpg">
+            <figcaption>
+               <big style="font-size: 20px; font-weight:900">Whenever You Need Somebody</big> 
+                <br>(1987)
+            </figcaption>
+          </figure>
+          <figure class="outer-image1">
+            <img src="../images/album_covers/rick_astley/hold_me_in_your_arms.jpg">
+            <figcaption>
+               <big style="font-size: 20px; font-weight:900">Hold Me in Your Arms</big> 
+                <br>(1988)
+            </figcaption>
+          </figure>
+          <figure class="outer-image1">
+            <img src="../images/album_covers/rick_astley/free.jpg">
+            <figcaption>
+               <big style="font-size: 30px; font-weight:900">Free</big> 
+                <br>(1991)
+            </figcaption>
+          </figure>
+          <figure class="outer-image1">
+            <img src="../images/album_covers/rick_astley/body_and_soul.jpg">
+            <figcaption>
+               <big style="font-size: 30px; font-weight:900">Body And Soul</big> 
+                <br>(1993)
+            </figcaption>
+          </figure>
+          <figure class="outer-image1">
+            <img src="../images/album_covers/rick_astley/keep_it_turned_on.jpg">
+            <figcaption>
+               <big style="font-size: 20px; font-weight:900">Keep It Turned On</big> 
+                <br>(2001)
+            </figcaption>
+          </figure>
+          <figure class="outer-image1">
+            <img src="../images/album_covers/rick_astley/portrait.jpg">
+            <figcaption>
+               <big style="font-size: 20px; font-weight:900">Portrait</big> 
+                <br>(2005)
+            </figcaption>
+          </figure>
+          <figure class="outer-image1">
+            <img src="../images/album_covers/rick_astley/50.jpg">
+            <figcaption>
+               <big style="font-size: 20px; font-weight:900">50s</big> 
+                <br>(2016)
+            </figcaption>
+          </figure>
+          <figure class="outer-image1">
+            <img src="../images/album_covers/rick_astley/beautiful_life.jpg">
+            <figcaption>
+               <big style="font-size: 20px; font-weight:900">Beautiful Life</big> 
+                <br>(2018)
+            </figcaption>
+          </figure>
+          <div class="center-image1">
+          </div>
+          <img src="../images/artist/rick_astley.png" class="center-image1">
+        </div>
+
+        <br><br><br>
+        <h1 class="Heading">Ludwig Van Beethoven</h1>
+        <div class="container4">
+          <figure class="outer-image1">
+            <img src="../images/album_covers/beethoven/ninth_symphony.jpg">
+            <figcaption>
+               <big style="font-size: 30px; font-weight:900">Symphony No. 9</big> 
+                <br>(1824)
+            </figcaption>
+          </figure>
+          <figure class="outer-image1">
+            <img src="../images/album_covers/beethoven/piano_sonatas.jpg">
+            <figcaption>
+               <big style="font-size: 30px; font-weight:900">Piano Sonatas</big> 
+                <br>(1798)
+            </figcaption>
+          </figure>
+          <figure class="outer-image1">
+            <img src="../images/album_covers/beethoven/piano_concertos.jpg">
+            <figcaption>
+               <big style="font-size: 30px; font-weight:900">Piano Concertos</big> 
+                <br>(1795)
+            </figcaption>
+          </figure>
+          <figure class="outer-image1">
+            <img src="../images/album_covers/beethoven/string_quartets.jpg">
+            <figcaption>
+               <big style="font-size: 30px; font-weight:900">String Quartets</big> 
+                <br>(1800)
+            </figcaption>
+          </figure>
+          <figure class="outer-image1">
+            <img src="../images/album_covers/beethoven/fidelio.jpg">
+            <figcaption>
+               <big style="font-size: 30px; font-weight:900">Fidelio</big> 
+                <br>(1805)
+            </figcaption>
+          </figure>
+          <img src="../images/artist/beethoven.webp" class="center-image1">
+        </div>
+
+
+        <br><br><br>
+
+
+        <h1 class="Heading">Tyler The Creator</h1>
+        <div class="container1">
+          <figure class="outer-image1">
+            <img src="../images/album_covers/tyler_the_creator/goblin.jpg">
+            <figcaption>
+               <big style="font-size: 30px; font-weight:900">Goblin</big> 
+                <br>(2011)
+            </figcaption>
+          </figure>
+          <figure class="outer-image1">
+            <img src="../images/album_covers/tyler_the_creator/wolf.jpg">
+            <figcaption>
+               <big style="font-size: 30px; font-weight:900">Wolf</big> 
+                <br>(2013)
+            </figcaption>
+          </figure>
+          <figure class="outer-image1">
+            <img src="../images/album_covers/tyler_the_creator/cherry_bomb.jpg">
+            <figcaption>
+               <big style="font-size: 30px; font-weight:900">Cherry Bomb</big> 
+                <br>(2015)
+            </figcaption>
+          </figure>
+          <figure class="outer-image1">
+            <img src="../images/album_covers/tyler_the_creator/flower_boy.jpg">
+            <figcaption>
+               <big style="font-size: 30px; font-weight:900">Flower Boy</big> 
+                <br>(2017)
+            </figcaption>
+          </figure>
+          <figure class="outer-image1">
+            <img src="../images/album_covers/tyler_the_creator/igor.jpg">
+            <figcaption>
+               <big style="font-size: 30px; font-weight:900">Igor</big> 
+                <br>(2019)
+            </figcaption>
+          </figure>
+          <figure class="outer-image1">
+            <img src="../images/album_covers/tyler_the_creator/call_me_if_you_get_lost.jpg">
+            <figcaption>
+               <big style="font-size: 20px; font-weight:900">Call me if you get Lost</big> 
+                <br>(2022)
+            </figcaption>
+          </figure>
+          <img src="../images/artist/tyler_the_creator.jpg" class="center-image1">
+        </div>
+
+        <br><br><br>
+
+        <h1 class="Heading">Dizzee Rascal</h1>
+        <div class="container3">
+          <figure class="outer-image1">
+            <img src="../images/album_covers/dizzee_rascal/boy_in_da_corner.jpg">
+            <figcaption>
+               <big style="font-size: 30px; font-weight:900">Goblin</big> 
+                <br>(2002)
+            </figcaption>
+          </figure>
+          <figure class="outer-image1">
+            <img src="../images/album_covers/dizzee_rascal/showtime.jpg">
+            <figcaption>
+               <big style="font-size: 30px; font-weight:900">Wolf</big> 
+                <br>(2004)
+            </figcaption>
+          </figure>
+          <figure class="outer-image1">
+            <img src="../images/album_covers/dizzee_rascal/maths_english.jpg">
+            <figcaption>
+               <big style="font-size: 30px; font-weight:900">Cherry Bomb</big> 
+                <br>(2007)
+            </figcaption>
+          </figure>
+          <figure class="outer-image1">
+            <img src="../images/album_covers/dizzee_rascal/tounge_n_cheek.jpg">
+            <figcaption>
+               <big style="font-size: 30px; font-weight:900">Flower Boy</big> 
+                <br>(2009)
+            </figcaption>
+          </figure>
+          <figure class="outer-image1">
+            <img src="../images/album_covers/dizzee_rascal/the_fifth.jpg">
+            <figcaption>
+               <big style="font-size: 30px; font-weight:900">Igor</big> 
+                <br>(2013)
+            </figcaption>
+          </figure>
+          <figure class="outer-image1">
+            <img src="../images/album_covers/dizzee_rascal/raskit.jpg">
+            <figcaption>
+               <big style="font-size: 20px; font-weight:900">Raskit</big> 
+                <br>(2017)
+            </figcaption>
+          </figure>
+          <figure class="outer-image1">
+            <img src="../images/album_covers/dizzee_rascal/e3_af.jpg">
+            <figcaption>
+               <big style="font-size: 20px; font-weight:900">E3 AF</big> 
+                <br>(2020)
+            </figcaption>
+          </figure>
+          <img src="../images/artist/dizzeerascal.webp" class="center-image1">
+        </div>
+
+        <br><br><br>
+
+        <h1 class="Heading">Pepe Lisa</h1>
+        <div class="container5">
+          <figure class="outer-image1">
+            <img src="../images/album_covers/pepe_lisa/gothic.jpg">
+            <figcaption>
+               <big style="font-size: 30px; font-weight:900">/G/othic</big> 
+                <br>(2002)
+            </figcaption>
+          </figure>
+          <figure class="outer-image1">
+            <img src="../images/album_covers/pepe_lisa/trumpoline.jpg">
+            <figcaption>
+               <big style="font-size: 30px; font-weight:900">Trumpoline</big> 
+                <br>(2020)
+            </figcaption>
+          </figure>
+          <figure class="outer-image1">
+            <img src="../images/album_covers/pepe_lisa/aim_mona_lisa.jpg">
+            <figcaption>
+               <big style="font-size: 30px; font-weight:900">AIM Mona Lisa</big> 
+                <br>(2022)
+            </figcaption>
+          </figure>
+          <figure class="outer-image1">
+            <img src="../images/album_covers/pepe_lisa/netscape_nightwatch.jpg">
+            <figcaption>
+               <big style="font-size: 30px; font-weight:900">Netscape Nightwatch</big> 
+                <br>(2023)
+            </figcaption>
+          </figure>
+          <figure class="outer-image1">
+            <img src="../images/album_covers/pepe_lisa/synthetica.jpg">
+            <figcaption>
+               <big style="font-size: 30px; font-weight:900">Synthetica</big> 
+                <br>(2069)
+            </figcaption>
+          </figure>
+          <img src="../images/artist/pepelisa.jpg" class="center-image1">
+        </div>
+    
+        <br><br><br>
+
+        <h1 class="Heading">Kanye West</h1>
+        <div class="container6">
+          <figure class="outer-image1">
+            <img src="../images/album_covers/kanye_west/jesus_is_king.jpg">
+            <figcaption>
+               <big style="font-size: 30px; font-weight:900">Jesus is King</big> 
+                <br>(2019)
+            </figcaption>
+          </figure>
+          <img src="../images/artist/kanye_west.jpg" class="center-image1">
+        </div>
+
+        <br><br><br>
+        <h1 class="Heading">Burger Child</h1>
+        <div class="container7">
+          <figure class="outer-image1">
+            <img src="../images/album_covers/burger_child/sneeds_feed_seed.jpg">
+            <figcaption>
+               <big style="font-size: 30px; font-weight:900">Sneed's Feed n Seed</big> 
+                <br>(2022)
+            </figcaption>
+          </figure>
+          <img src="../images/artist/buger_child.jpg" class="center-image1">
+        </div>
+
+        <br><br><br>
+        <h1 class="Heading">Wiley</h1>
+        <div class="container8">
+          <figure class="outer-image1">
+            <img src="../images/album_covers/wiley/godfather.jpg">
+            <figcaption>
+               <big style="font-size: 30px; font-weight:900">Godfather</big> 
+                <br>(2017)
+            </figcaption>
+          </figure>
+          <img src="../images/artist/wiley.png" class="center-image1">
+        </div>
+
+        <br><br><br>
+        <h1 class="Heading">Pete and Bas</h1>
+        <div class="container9">
+          <figure class="outer-image1">
+            <img src="../images/album_covers/pete_and_bas/a_quick_little_mixtape.jpg">
+            <figcaption>
+               <big style="font-size: 20px; font-weight:900">A Quick Little Mixtape</big> 
+                <br>(2022)
+            </figcaption>
+          </figure>
+          <figure class="outer-image1">
+            <img src="../images/album_covers/pete_and_bas/the_old_estate.jpg">
+            <figcaption>
+               <big style="font-size: 30px; font-weight:900">The Old Estate</big> 
+                <br>(2022)
+            </figcaption>
+          </figure>
+          <img src="../images/artist/pete_and_bas.jpg" class="center-image1">
+        </div>
+
+    </div>
+  </body>
+</html>

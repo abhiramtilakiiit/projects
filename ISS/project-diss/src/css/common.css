@@ -1,0 +1,49 @@
+@import url("./fonts.css");
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  text-align: center;
+  background-image: url("../../images/background.jpeg");
+  font-size: 20px;
+}
+
+.meanius {
+  display: grid;
+  grid-template-columns: max(70px, 10%) 30% 8%;
+  background: linear-gradient(178deg, #fef665 50%, #847247);
+  width: 100%;
+  padding-left: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-family: "Temp Quote Font";
+  height: 65px;
+}
+
+.meanius-item {
+  grid-row: 1;
+}
+
+.box {
+  background-image: radial-gradient(
+    rgba(235, 255, 204, 0.7),
+    rgba(246, 255, 238, 0.5)
+  );
+  border-radius: 30px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 10px 5px 5px rgba(50, 50, 50, 0.4);
+}
+
+.faq-box {
+  text-align: left;
+  height: 40px;
+  overflow-y: hidden;
+  padding-top: 0;
+  padding-bottom: 10;
+  width: fit-content;
+}
+
+.faq-box:hover {
+  height: fit-content;
+}
