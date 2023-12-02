@@ -1,6 +1,3 @@
 [submodule "ISS/hackathon39"]
 	path = ISS/hackathon39
 	url = https://github.com/abhiramtilakiiit/hackathon39
-[submodule "DNA/city-management-database"]
-	path = DNA/city-management-database
-	url = https://github.com/abhiramtilakiiit/city-management-database
