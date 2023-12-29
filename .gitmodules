@@ -1,7 +1,12 @@
-[submodule "ISS/hackathon39"]
-	path = ISS/hackathon39
-	url = https://github.com/abhiramtilakiiit/hackathon39
-[submodule "DNA/city-management-database"]
-	path = DNA/city-management-database
+[submodule "Introduction_to_Software_Systems/project-diss"]
+	path = Introduction_to_Software_Systems/project-diss
+	url = https://github.com/IIIT-ISS/project-diss.git
+	branch = main
+[submodule "Introduction_to_Software_Systems/hackathon39"]
+	path = Introduction_to_Software_Systems/hackathon39
+	url = https://github.com/IIIT-ISS/hackathon39
+	branch = main
+[submodule "Data_and_Applications/city-management-database"]
+	path = Data_and_Applications/city-management-database
 	url = https://github.com/DNA-5/city-management-database.git
 	branch = main
