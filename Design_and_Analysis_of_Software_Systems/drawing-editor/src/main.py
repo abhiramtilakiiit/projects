@@ -3,10 +3,13 @@ import tkinter as tk
 from tkinter import ttk
 from idlelib.tooltip import Hovertip
 from rectangle import Rectangle
+from line import Line
 from selector import Selector
 
 args = {
-    'rectangle': ['./assets/rectangle.png', 'Rectangle Button:\nThis is used to draw a rectangle']
+    'rectangle': ['./assets/rectangle.png', 'Rectangle Button:\nThis is used to'
+                  'draw a rectangle'],
+    'line': ['./assets/line.png', 'Line Button:\nThis is used to draw a line']
 }
 
 class App(tk.Tk):
@@ -28,8 +31,11 @@ class App(tk.Tk):
 
         # create rectangle button
         self.rectangle_button = self.__create_button__(Rectangle(self).callback,
-                                                   args['rectangle'][0],
-                                                   args['rectangle'][1])
+                                                   args['rectangle'])
+
+        # create a line button
+        self.line_button = self.__create_button__(Line(self).callback,
+                                                   args['line'])
 
         # set default selections
         self.selector = Selector(self)
@@ -39,8 +45,9 @@ class App(tk.Tk):
         self.currlist = []
         self.mainloop()
 
-    def __create_button__(self, callback, image_path, tooltip):
+    def __create_button__(self, callback, arguments):
         """Function to add a button"""
+        image_path, tooltip = arguments
         button = ttk.Button(self.sidebar,
                             image=tk.PhotoImage(file=image_path),
                             command=callback, cursor="hand2")
@@ -56,8 +63,7 @@ class App(tk.Tk):
     def init_bindings(self, selector):
         """Initializes default selections"""
         self.canvas.bind("<Button-1>", selector.perform_selection)
-        self.canvas.bind("<KeyPress>", selector.activate_multi)
-        self.canvas.bind("<KeyRelease>", selector.deactivate_multi)
+        self.canvas.bind("<Control-Button-1>", selector.activate_multi)
         self.canvas.bind("<Button-3>", selector.perform_deselection)
 
 
