@@ -32,7 +32,7 @@ class App(tk.Tk):
                                                    args['rectangle'][1])
 
         # set default selections
-        self.selector = Selector()
+        self.selector = Selector(self)
         self.init_bindings(self.selector)
 
         # object list: contains a list of objects

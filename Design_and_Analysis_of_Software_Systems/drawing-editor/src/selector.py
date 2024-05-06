@@ -13,21 +13,25 @@ class Selector():
         curr_x = self.canvas.winfo_pointerx()
         curr_y = self.canvas.winfo_pointery()
         for obj in self.root.currlist:
-            o_x,o_y = self.canvas.type(obj)
+            item_type = self.canvas.type(obj)
+            if item_type == "rectangle":
+                o_x, o_y 
+                
             if o_x - 1 < curr_x <= o_x+1 and o_y - 1 < curr_y <= o_y+1:
                 self.selected_objects.add(obj)
 
 
 
-    def perform_delection(self):
+    def perform_deselection(self):
         if not self.multimode:
             self.selected_objects = set()
-        todo()
+        
 
-    def activate_multi(self):
+    def activate_multi(self, event):
         """activating the multiselect mode"""
+        i
         self.multimode = True
 
-    def deactivate_multi(self):
+    def deactivate_multi(self, event):
         """deactivating the multiselect mode"""
         self.multimode = False
