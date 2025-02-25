@@ -14,3 +14,10 @@
 	path = Design_and_Analysis_of_Software_Systems/ims-mobile-app
 	url = https://github.com/IMS-IIITH/ims-mobile-app.git
   branch = main
+[submodule "Operating_Systems_and_Networks/Network_File_System"]
+	path = Operating_Systems_and_Networks/Network_File_System
+	url = https://github.com/OSN-UG2k22/NFS.git
+  branch = main
+[submodule "Operating_Systems_and_Networking/Network_File_System"]
+	path = Operating_Systems_and_Networking/Network_File_System
+	url = https://github.com/OSN-UG2k22/NFS.git
