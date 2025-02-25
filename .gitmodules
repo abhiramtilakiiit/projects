@@ -13,3 +13,4 @@
 [submodule "Design_and_Analysis_of_Software_Systems/ims-mobile-app"]
 	path = Design_and_Analysis_of_Software_Systems/ims-mobile-app
 	url = https://github.com/IMS-IIITH/ims-mobile-app.git
+  branch = main
