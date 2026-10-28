@@ -1,0 +1,5 @@
+This script tackles the task of classifying images into specific geographical regions, identified by a Region ID. This is treated as a classification problem.
+
+The model architecture is ResNet18, a well-known Convolutional Neural Network (CNN). The script initializes the model with weights pre-trained on ImageNet, indicating a fine-tuning approach where the pre-trained CNN is adapted for the region classification task by replacing the final classification layer.
+
+The training is configured for Distributed Data Parallel (DDP) to utilize multiple GPUs. It uses the standard Cross-Entropy Loss suitable for multi-class classification. The script handles the mapping of original Region IDs to a 0-based index for training and then maps the predicted index back to the original Region ID for submission. Data cleaning, including removing entries with abnormal locations, is applied to the training data. The script also includes functionality to generate a submission file with predicted Region IDs for validation and placeholder entries for the test set.
