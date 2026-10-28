@@ -6,7 +6,7 @@ Conducted as part of the **Music, Mind, and Theory (MMT)** curriculum by **Abhir
 
 ---
 
-## 📌 Executive Summary & Key Discoveries
+## Executive Summary & Key Discoveries
 
 Can the story you read right before listening to music alter how you feel, remember, and interpret emotional cues? 
 
@@ -27,7 +27,7 @@ Building on foundational work by **Vuoskoski & Eerola (2012, 2013)**, this proje
                             └────────────────────────┴────────────────────────┘
 ```
 
-### 🔍 Key Findings:
+###  Key Findings:
 1. **Cognitive Incongruence Eliminates Mood-Congruent Memory Bias**:
    - Under congruent conditions (Group 2: Sad Music + Sad Story, $p = 0.0349$; Group 4: Happy Music + Happy Story, $p = 0.0035$) and neutral music baseline (Group 6, $p = 0.0141$), participants exhibited a significant positive word recall bias.
    - When narrative and musical cues conflicted (Group 1: Sad Music + Happy Story, $p = 0.2708$; Group 5: Happy Music + Sad Story, $p = 0.4326$), this bias was completely neutralized by cognitive interference.
@@ -38,7 +38,7 @@ Building on foundational work by **Vuoskoski & Eerola (2012, 2013)**, this proje
 
 ---
 
-## 🔬 Experimental Methodology & Stimuli
+##  Experimental Methodology & Stimuli
 
 ```mermaid
 flowchart LR
@@ -64,7 +64,7 @@ flowchart LR
 
 ---
 
-## 📊 Visualizations & Statistical Results
+##  Visualizations & Statistical Results
 
 ### 1. Word Recall Bias (Positive vs. Negative Adjectives)
 ![Word Recall Scores](results/figures/word_recall_scores.png)
@@ -80,7 +80,7 @@ flowchart LR
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```
 .
@@ -130,7 +130,7 @@ flowchart LR
 
 ---
 
-## 🚀 Quickstart & Reproduction
+## How to Reproduce results?
 
 ### 1. Installation
 Clone the repository and set up a virtual environment:
@@ -184,17 +184,3 @@ To inspect or run the experiment delivery environment locally:
 ```
 Open [http://localhost:8000](http://localhost:8000) to view the routing hub, or access individual condition ports from `8001` to `8006`.
 
----
-
-## 📚 References & Literature
-
-1. **Vuoskoski, J. K., & Eerola, T. (2015).** *Extramusical information contributes to emotions induced by music.* Psychology of Music, 43(2), 262–274. [doi:10.1177/0305735613502373](https://doi.org/10.1177/0305735613502373).
-2. **Vuoskoski, J. K., & Eerola, T. (2012).** *Can sad music really make you sad? Indirect measures of affective states induced by music and autobiographical memories.* Psychology of Aesthetics, Creativity, and the Arts, 6(3), 204–213. [doi:10.1037/a0026937](https://doi.org/10.1037/a0026937).
-3. **Watson, D., Clark, L. A., & Tellegen, A. (1988).** *Development and validation of brief measures of positive and negative affect: The PANAS scales.* Journal of Personality and Social Psychology, 54(6), 1063–1070. [doi:10.1037/0022-3514.54.6.1063](https://doi.org/10.1037/0022-3514.54.6.1063).
-4. **Vanger, P., Hoenlinger, R., & Haken, H. (1998).** *Computer-aided generation of prototypical facial expressions of emotion.* Methods of Psychological Research Online, 3(2), 25–38.
-5. **Västfjäll, D. (2010).** *Indirect perceptual, cognitive, and behavioural measures.* In P. N. Juslin & J. A. Sloboda (Eds.), Handbook of Music and Emotion (pp. 255–277). Oxford University Press.
-
----
-
-## 📄 License
-This repository is licensed under the [MIT License](LICENSE).
